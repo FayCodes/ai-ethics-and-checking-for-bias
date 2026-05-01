@@ -1,145 +1,47 @@
-# 🌍 COMPAS Bias Audit & AI Ethics Report
+# ai-ethics-and-checking-for-bias
 
-This project explores the ethical dimensions of AI through a comprehensive analysis of the COMPAS Recidivism Dataset. It blends theoretical insight, case study evaluation, technical bias auditing, and policy design, demonstrating responsible AI development aligned with fairness, transparency, and human-centric principles.
-
----
-
-## 📚 Assignment Overview: "Designing Responsible and Fair AI Systems"
-
-Submitted for the AI Ethics unit, this group assignment includes:
-
-- ✅ Theoretical responses on key ethical concepts
-- ✅ Case study analysis of real-world bias scenarios
-- ✅ Fairness audit of the COMPAS dataset
-- ✅ Ethical reflection on future project values
-- ✅ Bonus healthcare policy proposal for ethical AI use
+This project explores the ethical dimensions of AI through a comprehensive analysis of the **COMPAS Recidivism Dataset**. It blends theoretical insight, case study evaluation, technical bias auditing, and policy design to demonstrate responsible AI development aligned with fairness, transparency, and human-centric principles.
 
 ---
 
-## 🧠 Part 1: Theoretical Understanding
-
-**Short Answers:**
-- Defined algorithmic bias with examples in finance and hiring.
-- Differentiated transparency vs. explainability in AI systems.
-- Analyzed GDPR's impact on EU-based AI development and data governance.
-
-**Ethical Principles Matching:**
-- Justice → Fair distribution of AI benefits/risks  
-- Non-maleficence → Ensuring AI does no harm  
-- Autonomy → Respecting users’ control over data and decisions  
-- Sustainability → Environmentally responsible AI design
+## 📚 Project Overview
+* **Goal**: Conduct a comprehensive fairness audit of the COMPAS dataset and design protocols for responsible AI systems.
+* **Assignment**: Submitted for the "Designing Responsible and Fair AI Systems" unit, covering theory, real-world case studies, and technical implementation.
+* **Deliverables**: Theoretical analysis, fairness audit reports, technical visualizations, and a healthcare-specific AI policy proposal.
 
 ---
 
-## 🧪 Part 2: Case Study Analysis
-
-**Case 1: Amazon’s Biased Hiring Tool**
-- Source of bias: Gender-skewed training data
-- Fixes:
-  - Diversify training datasets
-  - Strip gendered proxies from input features
-  - Implement post-training fairness constraints
-- Evaluation Metrics: Disparate impact ratio, false negative rate difference, Equal Opportunity Difference
-
-**Case 2: Facial Recognition in Policing**
-- Ethical risks: Misidentification, wrongful arrests, data privacy violations
-- Deployment Recommendations:
-  - Human review for all matches
-  - Transparency with affected communities
-  - Independent model audits and bias thresholding
+## 🧠 Part 1: Theoretical & Case Study Analysis
+* **Ethical Framework**: Applied principles of Justice, Non-maleficence, Autonomy, and Sustainability to AI governance.
+* **Amazon Hiring Case**: Analyzed gender-skewed training data and proposed mitigation through diversified datasets and removing gendered proxies.
+* **Policing & Facial Recognition**: Identified risks of misidentification and wrongful arrest, recommending human-in-the-loop oversight and independent audits.
 
 ---
 
-## 📊 Part 3: Practical Audit (Using AI Fairness 360)
-
-Audited the COMPAS dataset for racial and gender bias using Python.
-
-**Libraries Used:**
-- `aif360`
-- `pandas`
-- `matplotlib`
-- `scikit-learn`
-
-**Protected Attributes Analyzed:**
-- Race (`Caucasian` vs. `African-American`)
-- Sex (`Male` vs. `Female`)
-
-**Metrics Calculated:**
-- Statistical Parity Difference
-- Disparate Impact
-- Equal Opportunity Difference
-- Average Odds Difference
-- False Positive/Negative Rate Differences
-
-**Visualizations Saved:**
-- `compas_bias_analysis_race.png`
-- `compas_bias_analysis_sex.png`
-
-**Report Delivered:**
-- `report.txt` – 300-word summary of findings and mitigation recommendations  
-> Technical audit completed with support from Cursor AI and Copilot for debugging, validation, and ethical framing.
+## 📊 Part 2: Technical Audit (AI Fairness 360)
+Using **Python** and the **aif360** toolkit, I conducted a technical audit of the COMPAS dataset to identify racial and gender disparities.
+* **Protected Attributes**: Race (Caucasian vs. African-American) and Sex (Male vs. Female).
+* **Metrics Calculated**: Statistical Parity Difference, Disparate Impact, Equal Opportunity Difference, and Average Odds Difference.
+* **Findings**: Detailed bias analysis saved in `compas_bias_analysis_race.png` and `compas_bias_analysis_sex.png`.
 
 ---
 
-## 💬 Part 4: Ethical Reflection
-
-Reflecting on future bias analysis tools, key ethical values included:
-
-- Designing for inclusive fairness audits
-- Ensuring explainability through interpretable models
-- Transparent documentation of model design and limitations
-- Preserving human decision oversight in AI-augmented systems
+## 🏥 Part 3: Healthcare AI Policy Proposal
+Outlined in `policy_guideline.txt`, this proposal establishes protocols for ethical AI deployment in clinical settings:
+* **Patient Protections**: Established clear opt-in/opt-out consent policies and mandated human oversight for clinical decisions.
+* **Bias Mitigation**: Protocols for inclusive training data and routine fairness audits to prevent diagnostic disparities.
+* **Transparency**: Requirements for explainable model outputs and full disclosure of AI usage in medical workflows.
 
 ---
 
-## 🏥 Bonus Task: AI Policy Proposal for Healthcare
-
-**Document: `policy_guideline.txt`**
-
-Outlines protocols for ethical AI deployment in healthcare, including:
-
-- **Patient Consent Protocols**:
-  - Clear opt-in/opt-out policies
-  - Assurance of human oversight
-
-- **Bias Mitigation Strategies**:
-  - Inclusive training data
-  - Routine fairness audits
-  - Stakeholder inclusion
-
-- **Transparency Requirements**:
-  - Explainable model outputs
-  - Disclosure of AI usage in clinical workflows
+## ⚙️ Tool Stack
+* **Languages & Environments**: Python, Google Colab.
+* **Libraries**: aif360 (IBM Fairness toolkit), pandas, matplotlib, scikit-learn.
 
 ---
 
-## ⚙️ Full Tool Stack Used
+## 👤 About the Developer
 
-| Tool               | Purpose                               |
-|--------------------|----------------------------------------|
-| `Python`           | Scripting language                     |
-| `aif360`           | IBM Fairness toolkit                   |
-| `pandas`           | Data cleaning and manipulation         |
-| `matplotlib`       | Visualization                          |
-| `scikit-learn`     | Utility functions & data prep          |
-| `Cursor AI`        | Code debugging assistant               |
-| `Copilot`          | Guidance, ethical framing & reporting  |
-| `Google Colab`     | Notebook environment                   |
+**Faith Blessing Wafula**
 
----
-
-## 📌 Submission Format
-
-- PDF document: Written answers and case study analysis  
-- GitHub Repository: Code, visualizations, and README  
-- Article (Bonus): Policy proposal shared with PLP Academy
-
----
-
-## 🌟 Why This Matters
-
-Ethical AI is the cornerstone of trustworthy, impactful technology. This project demonstrates:
-- Awareness of social implications
-- Technical competency in bias auditing
-- Commitment to responsible, transparent AI development
-
+Lead Developer and Data Scientist focused on building intelligent systems and data-driven solutions that bridge the gap between technical excellence and community impact.
